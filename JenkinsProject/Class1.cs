@@ -8,21 +8,29 @@ namespace JenkinsProject
 {
     public class Class1
     {
-        int i = 10;
-        int j=20;
-        public void Add()
+       
+        public void Add(int i,int j)
         {
             int ans = i + j;
+            Console.WriteLine(ans);
         }
 
-        public void Sub()
+        public void Sub(int i,int j)
         {
             int ans = i - j;
+            Console.WriteLine("Sub:"+ans);
         }
 
-        public void Multiply()
+        public void Multiply(int i,int j)
         {
             int ans = i * j;
+            Console.WriteLine("Multiplication:"+ans);
+        }
+
+        public void Div(int i, int j)
+        {
+            int ans = i / j;
+            Console.WriteLine("Multiplication:" + ans);
         }
     }
 }
